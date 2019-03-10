@@ -13,7 +13,7 @@ import dlg from 'vue-dialog-rexsheng';
 //default instanceName is "$dialog",you can use this.$dialog.alert() in pages
 Vue.use(dlg,{instanceName:"$dialog"})
 ```
-#用法
+# 用法
 ```javascript
 <template>
   <div>
@@ -108,7 +108,7 @@ export default {
 
 
 ```
-#配置项
+# 配置项
 ```
 this.$dialog.alert("message","title",option)
 this.$dialog.alert("message",option)

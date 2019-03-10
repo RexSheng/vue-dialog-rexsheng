@@ -2,8 +2,8 @@ var path = require('path')
 var webpack = require('webpack')
 // var ExtractTextPlugin = require("extract-text-webpack-plugin")
 module.exports = {
-  // entry: './src/main.js',
-  entry: './src/lib/index.js',//资源入口文件
+  entry: process.env.NODE_ENV === 'production'?'./src/lib/index.js':'./src/main.js',
+  // entry: './src/lib/index.js',//资源入口文件
   output: {
     path: path.resolve(__dirname, './dist'),//打包输出目录
     publicPath: '/dist/',//公共资源路径
