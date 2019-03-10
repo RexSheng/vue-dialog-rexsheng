@@ -136,4 +136,4 @@ this.$dialog.modal(option)
 |callback        | modal关闭弹框的回调函数 | Function |
 
 
-For detailed explanation on how things work, consult the [docs for vue-dialog-rexsheng](https://github.com/RexSheng).
+For detailed explanation on how things work, consult the [docs for vue-dialog-rexsheng](https://github.com/RexSheng/vue-dialog-rexsheng).
