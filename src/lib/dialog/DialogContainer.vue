@@ -71,7 +71,6 @@ export default {
         },
         add(type,p){
             var arg=this.buildParam(type,p);
-            console.log(arg);
             return arg.uniqueKey;
         },
         close(key){

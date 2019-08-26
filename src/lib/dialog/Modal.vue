@@ -18,6 +18,7 @@
       <div class="RexSheng_alert_body">
         <div class="RexSheng_alert_body_content" :style="{'max-height':bodyHeight+'px'}">
             <component :is="modalOption.component" :params="modalOption.params" @close="closeModal"></component>
+             
         </div>
          
       </div>

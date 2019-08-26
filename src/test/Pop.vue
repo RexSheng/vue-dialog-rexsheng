@@ -7,6 +7,8 @@
     <button type="button" @click="showHtmlConfirm">HtmlConfirm</button>
     <button type="button" @click="asyncConfirm">asyncConfirm</button>
     <button type="button" @click="showModal">showModal</button>
+    <button type="button" @click="showModalRender">showModalRender</button>
+    <!-- <dlg-modal></dlg-modal> -->
   </div>
 </template>
 <script>
@@ -82,6 +84,16 @@ export default {
         callback: p => {
           console.log("return:", p,this.title);
           this.$dialog.alert("输入了："+p, { type: "error" });
+        }
+      });
+    },
+    showModalRender: function() {
+      this.$dialog.modal({
+        title: "标题22",
+        showCloseBtn: this.checked,
+        width: "1000px",
+        render:(h)=>{
+          return h("h2","你好")
         }
       });
     }

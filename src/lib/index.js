@@ -25,6 +25,14 @@ const dialogPlugin={
                 return dlg.closeAll(callback);
             }
         }
+        Vue.component("dlg-modal",{
+            functional:true,
+            render:function(h,context){
+                dlg.add(typeEnum.modal,context.data);
+                return h(dlg,context.data,context.children)
+                
+            }
+        })
     }
 }
 export default dialogPlugin;

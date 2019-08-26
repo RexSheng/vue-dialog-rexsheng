@@ -2,9 +2,12 @@ dist/*.map
 node_modules
 build
 src
+.git
 .babelrc
 .editorconfig
 .gitignore
+.gitattributes
 index.html
 package-lock.json
 webpack.config.js
+LICENSE

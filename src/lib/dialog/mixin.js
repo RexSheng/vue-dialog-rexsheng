@@ -32,9 +32,15 @@ export default{
             lang:"zh-CN"
         }
     },
+    components:{
+        // "modal-content-component":{
+        //     functional:true,
+        //     render:function(h,context){
+        //         return this.modalOption?this.modalOption.render(h):{}
+        //     }}
+    },
     mounted(){
         this.show=true
-        console.log("dialogType",this.dialogType)
     },
     computed:{
         i18nGetter(){
@@ -90,7 +96,6 @@ export default{
                 },20)  
             });
             
-            console.log("alertOption",this.dialogOption,this.dialogType)
             return this.dialogOption
         },
         modalOption:function(){
@@ -135,7 +140,6 @@ export default{
                 })
                 .then((a)=>{
                     self.btnDisabled=false;
-                    console.log(a)
                     if(a===false){
 
                     }
@@ -172,7 +176,6 @@ export default{
                 })
                 .then((a)=>{
                     self.btnDisabled=false;
-                    console.log(a)
                     if(a===false){
 
                     }
